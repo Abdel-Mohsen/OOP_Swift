@@ -1,7 +1,6 @@
 import UIKit
 
 
-// --------------------------------- Inheritance and Polymerphism ------------------------  //
 
 class Car{
     // class properties
@@ -31,8 +30,6 @@ class Car{
 
 
 
-// --------------------------------------------------------------------------------------- //
-
 // Derived class
 class BMW : Car{
     // class properties
@@ -61,8 +58,6 @@ class BMW : Car{
 }
 
 
-
-// -------------------------------------------------------------------------------------- //
 
 
 
@@ -105,8 +100,6 @@ class Tesla : Car{
 
 
 
-// --------------------------------------------------------------------------------------  //
-
 
 
 class Mercedes : Car{
@@ -135,15 +128,9 @@ class Mercedes : Car{
 
 
 
-// -------------------------------------------------------------------------------------  //
 
 
-
-
-// ########################################### Protocol ################################# //
-
-
-
+// protocol
 protocol Animal {
     func canSwim() -> Bool
 }
@@ -157,4 +144,44 @@ class Fish : Animal{
 }
 
 
-// ######################################################################################## //
+
+// main
+
+    // initialize classes
+    let car = Car(_wheels: 4, _seats: 7, _enginePower: 1200)
+    let mercedes = Mercedes(_speed: 250, _modelName: "Mercedes-Benz CLS", _wheels: 4, _seats: 6, _enginePower: 2500)
+    let bmw = BMW(_speed: 300, _engineName: "mo-T5", _wheels: 4, _seats: 5, _enginePower: 3000)
+    let tesla = Tesla(_wheels: 4, _seats: 1, _enginePower: 4500, _speed: 800, _tank: "electricity", _modelName: "Tesla-row-Y7")
+    
+    // base class reference variable that points to derived class object
+    let car2:Car = Tesla(_wheels: 4, _seats: 4, _enginePower: 500, _speed: 80, _tank: "electricity", _modelName: "Tesla-row-W44")
+    
+    car.ShowInfo()
+    // dummy engine name
+    car.ShowEngine(_engineName: "Z5-t4")
+    
+    print("---------------------------------------------------------")
+    
+    bmw.ShowEngine(_engineName: "wbm-Z8")
+    bmw.ShowInfo()
+    bmw.Model()
+    
+    print("---------------------------------------------------------")
+    
+    mercedes.Model()
+    mercedes.ShowInfo()
+    mercedes.ShowEngine(_engineName: "mer-78")
+    
+    print("---------------------------------------------------------")
+    
+    tesla.ShowInfo()
+    tesla.ShowEngine(_engineName: "Tesla-TT")
+    tesla.ShowEngine(_modelNumber: "123654-cc", _mirrors: 4)
+    
+    
+    print("---------------------------------------------------------")
+    
+    
+    car2.ShowEngine(_engineName: "C2")
+    car2.ShowInfo()
+    
