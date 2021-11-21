@@ -3,7 +3,21 @@
  OOP is an abbreviation of Object Oriented Programming system in which programs are considered as a collection of objects. Each object is nothing but an instance of a class. OOP is a very important topic in programming and every programmer must know how to use it in his code.
 So in this project I tried to cover some of the main concepts of the Object-Oriented Programming (OOP) using Swift programming language.
 
+ 
+ ## Getting Started
+ <p>
+Go ahead and download the zip file then open it. You will have the full project click run and you should see this screen : 
+</p>
+<p align="center">
+    <img src="terminal.png" alt="OOP_Swift"/>
+</p>
 
+ ## Project Structure
+ 
+ <p align="center">
+    <img src="/swift.png" alt="OOP_Swift"/>
+</p>
+ 
 
 ## Code
 
